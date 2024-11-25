@@ -1,0 +1,211 @@
+/* DUẨN SỬA CODE  */
+/* Toàn bộ footer */
+.footer-wrapper {
+    background-color: #333; /* Màu nền tối cho footer */
+    color: #fff; /* Màu chữ trắng */
+    padding: 30px 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Bố cục nội dung */
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; /* Đảm bảo giao diện tốt trên màn hình nhỏ */
+    gap: 20px;
+    justify-content: space-between;
+}
+
+/* Các cột */
+.footer-section {
+    flex: 1; /* Cân bằng kích thước giữa các phần */
+    min-width: 200px; /* Đảm bảo không bị thu nhỏ quá */
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #f4a261; /* Đường gạch chân */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Liên kết nhanh */
+.footer-section.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section.links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section.links ul li a {
+    color: #f4a261; /* Màu cam nhạt */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section.links ul li a:hover {
+    color: #e76f51; /* Màu cam đậm khi hover */
+}
+
+/* Mạng xã hội */
+.footer-section.social ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left:100px; 
+}
+
+.footer-section.social ul li {
+    display: flex;
+    align-items: center;
+}
+
+.footer-section.social ul li a {
+    display: flex;
+    align-items: center;
+    color: #f4a261;
+    text-decoration: none;
+    font-size: 14px;
+    gap: 5px; /* Khoảng cách giữa icon và text */
+    transition: color 0.3s ease;
+}
+
+.footer-section.social ul li a img {
+    width: 20px; /* Kích thước icon nhỏ gọn */
+    height: 20px;
+    border-radius: 50%;
+}
+
+.footer-section.social ul li a:hover {
+    color: #e76f51;
+}
+
+/* Phần cuối */
+.footer-bottom {
+    background-color: #222; /* Nền tối hơn cho phần cuối */
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    border-top: 1px solid #444; /* Đường phân cách */
+    margin-top: 20px;
+}
+
+
+
+
+/* header */
+/* Reset mặc định */
+/* Reset mặc định */
+body, h1, h2, h3, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    padding-top: 70px; /* Đẩy nội dung xuống để không bị menu che */
+}
+
+/* Thanh navbar */
+/* Cơ bản */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed; /* Cố định menu */
+    top: 0;
+    width: 100%;
+    background-color: #fff; /* Nền tối */
+    color: black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+    z-index: 1000; /* Luôn ở trên các thành phần khác */
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Khoảng cách trong */
+}
+
+/* Logo */
+.navbar .logo img {
+    height: 40px; /* Đặt chiều cao cố định cho logo */
+    transition: transform 0.3s ease;
+    border-radius: 50%;
+}
+.logo img:hover {
+    transform: scale(1.1); /* Hiệu ứng zoom nhẹ khi hover */
+}
+/* Menu */
+.navbar .menu {
+    display: flex;
+    gap: 20px; /* Khoảng cách giữa các mục menu */
+}
+
+.navbar .menu a {
+    color: black; /* Màu chữ */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 12px; /* Thêm padding để menu cân đối */
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar .menu a:hover {
+    color: orange; /* Màu chữ khi hover */
+    text-decoration: underline;
+    
+}
+
+/* Tìm kiếm */
+.navbar .search form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar .search input {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.navbar .search button {
+    padding: 5px 10px;
+    background-color: #1abc9c; /* Nút tìm kiếm xanh */
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .search button:hover {
+    background-color: #e76f51; /* Màu nút khi hover */
+    transform: scale(1.05); /* Hiệu ứng phóng to nhẹ khi hover */
+}
+
+/* Khoảng cách nội dung để không bị che */
+body {
+    padding-top: 70px; /* Đẩy nội dung xuống để tránh bị menu che */
+}
+
+
+
+
