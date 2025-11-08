@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Ứng dụng Node.js - Đăng nhập & Đăng ký</h1>
+      <nav>
+        <a href="/">Trang chủ</a>
+        <% if (!currentUser) { %>
+          <a href="/login">Đăng nhập</a>
+          <a href="/register">Đăng ký</a>
+        <% } else { %>
+          <form action="/logout" method="post" class="logout-form">
+            <button type="submit">Đăng xuất</button>
+          </form>
+        <% } %>
+      </nav>
+    </header>
+
+    <main class="container">
+      <%- include('partials/messages') %>
+      <% if (currentUser) { %>
+        <section class="card">
+          <h2>Xin chào, <%= currentUser.username %>!</h2>
+          <p>Bạn đã đăng nhập thành công. Đây là trang mẫu có thể mở rộng cho ứng dụng của bạn.</p>
+        </section>
+      <% } else { %>
+        <section class="card">
+          <h2>Chào mừng bạn!</h2>
+          <p>Hãy đăng ký tài khoản mới hoặc đăng nhập để trải nghiệm ứng dụng.</p>
+          <div class="action-buttons">
+            <a class="btn" href="/register">Đăng ký ngay</a>
+            <a class="btn btn-secondary" href="/login">Đăng nhập</a>
+          </div>
+        </section>
+      <% } %>
+    </main>
+  </body>
+</html>
