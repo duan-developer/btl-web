@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Đăng ký</h1>
+      <% include partials/messages %>
+      <form method="POST" action="/register" class="form-card">
+        <label for="name">Họ và tên</label>
+        <input type="text" id="name" name="name" placeholder="Nguyễn Văn A" required />
+
+        <label for="username">Tên đăng nhập</label>
+        <input type="text" id="username" name="username" placeholder="username" required />
+
+        <label for="password">Mật khẩu</label>
+        <input type="password" id="password" name="password" placeholder="••••••" required />
+
+        <button type="submit">Đăng ký</button>
+      </form>
+      <p>
+        Đã có tài khoản?
+        <a href="/login">Đăng nhập</a>
+      </p>
+    </div>
+  </body>
+</html>

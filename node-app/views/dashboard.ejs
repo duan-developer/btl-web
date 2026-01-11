@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bảng điều khiển</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Xin chào, <%= user.name %>!</h1>
+        <nav>
+          <a class="button" href="/logout">Đăng xuất</a>
+        </nav>
+      </header>
+      <% include partials/messages %>
+      <section class="card">
+        <h2>Chúc mừng bạn đã đăng nhập thành công 🎉</h2>
+        <p>
+          Đây là trang bảng điều khiển đơn giản. Bạn có thể tùy biến thêm nội dung
+          theo nhu cầu của mình.
+        </p>
+      </section>
+    </div>
+  </body>
+</html>
